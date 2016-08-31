@@ -5,8 +5,8 @@ workspace(name = "intellij_with_bazel")
 new_http_archive(
     name = "intellij_latest",
     build_file = "remote_platform_sdks/BUILD.idea",
-    sha256 = "d1cd3f9fd650c00ba85181da6d66b4b80b8e48ce5f4f15b5f4dc67453e96a179",
-    url = "https://download.jetbrains.com/idea/ideaIC-2016.1.3.tar.gz",
+    sha256 = "3a3fde46e4eefad4a4f0bf3ebabf1a67f27f6e5a157d1b2ee416b1df5d6b8e04",
+    url = "https://download.jetbrains.com/idea/ideaIC-2016.2.3.tar.gz",
 )
 
 # The plugin api for CLion 2016.1.3. This is required to build CLwB,
@@ -15,7 +15,7 @@ new_http_archive(
     name = "clion_latest",
     build_file = "remote_platform_sdks/BUILD.clion",
     sha256 = "470063f1bb65ba03c6e1aba354cb81e2c04bd280d9b8da98622be1ba6b0a9c88",
-    url = "https://download.jetbrains.com/cpp/CLion-2016.1.3.tar.gz",
+    url = "https://download.jetbrains.com/cpp/CLion-2016.2.3.tar.gz",
 )
 
 # The plugin api for Android Studio 2.2. preview 4. This is required to build ASwB,
